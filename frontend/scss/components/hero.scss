@@ -1,0 +1,91 @@
+@import "../abstracts/mixins";
+.main--hero {
+    image-rendering: crisp-edges;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px 8px; /* top, right, bottom, left */
+    gap: 10px;
+    @include tablet-screen {
+        padding: 40px 20px;
+    }
+    @include desktop-screen {
+        padding: 60px 150px;
+    }
+
+    &--container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 8px; /* top, right, bottom, left */
+        gap: 20px;
+        border-radius: 4px;
+        background: rgba(188, 188, 188, 0.20);
+        /* glassmorphism */
+        backdrop-filter: blur(7.5px);
+        &--edge {
+            text-align: center;
+            align-items: center;
+            &--home {
+                text-align: center;
+                padding: 20px;
+            }
+            &--look {
+                text-align: center;
+            }
+        }
+        &--form {
+            max-width: 100%;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            &--1 {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 11px;
+                flex-wrap: wrap; /* Ensures items wrap to next line if necessary */
+            }
+        }
+    }
+}
+
+.input-container {
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .input-container input {
+    width: 300px;
+    padding: 10px;
+    height: 55px;
+    padding-right: 30px; /* Make space for the icon */
+    box-sizing: border-box;
+  }
+
+  .input-container .fa-chevron-down {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #333; /* Change the color as needed */
+    font-size: 30px;
+  }
+  .mybutton1 {
+    display: flex;
+    height: 50px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: left;  
+    border-radius: 8px;
+    border: 1px solid #008000;
+    background: linear-gradient(90.35deg, #034903 16.81%, #008000 80.55%);
+    box-shadow: 0px 1px 50px 0px rgba(0, 0, 0, 0.1);
+  }
+  

@@ -1,0 +1,42 @@
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    padding: 36px 8px;
+    background-color: $light-green;
+    gap: 30px;
+
+    &--div1 {
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+
+    }
+    &--div2 {
+        gap: 24px;
+        display: flex;
+        flex-direction: column;
+        & input {
+            width: 414px; /* Fill */
+            height: 55px; /* Fixed */
+            padding: 12px 20px; /* top, right, bottom, left */
+            gap: 30px;
+            border-radius: 4px;
+            border: 1px solid transparent; /* Adjusted to be visible */
+            border-width: 1px 0px 0px 0px;
+        }
+        &--btn {
+            width: 268px; /* Fixed */
+            height: 39px; /* Fixed */
+            padding: 0px;
+            gap: 10px;
+            border-radius: 8px;
+            align-items: center;
+            justify-items: center;
+            text-align: center;
+            margin-left: 60px;
+            color: $light-green;
+            border: 1px solid transparent;
+            margin-bottom: 20px;
+        }
+    }
+}

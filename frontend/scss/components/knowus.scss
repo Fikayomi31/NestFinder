@@ -1,0 +1,45 @@
+.main--container--knowus {
+    display: flex;
+    flex-direction: column;
+    padding: 32px; /* top, right, bottom, left */
+    background: linear-gradient(180deg, #008000 0%, #052F05 100%);
+
+    @include desktop-screen {
+        display: flex;
+        flex-direction: row;
+    }
+    &--words {
+        gap: 20px;
+        padding: 40px 8px;
+        &--p1 {
+            margin-top: 20px;
+        }
+        &--p2 {
+            margin-top: 20px;
+
+        }
+    }
+    &--image {
+        padding: 20px 8px;
+        & img {
+            @include mobile-screen {
+                width: 300px;
+                height: 270px;
+                align-items: center;
+                justify-content: center;
+            }
+            @include tablet-screen {
+                width: 400px;
+                height: 300px;
+                align-items: center;
+                justify-content: center;
+            }
+            @include desktop-screen {
+                width: 740px;
+                height: 500px;
+            }
+           
+        }
+    }
+}
+
