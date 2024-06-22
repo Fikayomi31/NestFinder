@@ -20,6 +20,7 @@ class User(models.Model):
         return self.username
     
 class Agent(models.Model):
+    """Creating agent class"""
     agent_name = models.CharField(max_length=100)
     agent_number = models.CharField(max_length=100)
     licence_number = models.CharField(max_length=100)
