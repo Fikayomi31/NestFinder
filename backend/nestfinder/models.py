@@ -10,7 +10,20 @@ class CustomUser(AbstractUser):
         ('agent', 'Agent'),
     )
     user_type = models.CharField(max_length=10, choices=USER_TYPE_CHOICES)
-
+    groups = models.ManyToManyField(
+        'auth.Group',
+        related_name='customuser_set',
+        blank=True,
+        help_text='The groups this user belongs to. A user will get all permissions granted to each of their groups.',
+        related_query_name='customuser'
+    )
+    user_permissions = models.ManyToManyField(
+        'auth.Permission',
+        related_name='customuser_set',
+        blank=True,
+        help_text='Specific permissions for this user.',
+        related_query_name='customuser'
+    )
 
 class CustomerProfile(models.Model):
     """creating profile for customer"""
@@ -19,11 +32,11 @@ class CustomerProfile(models.Model):
 
 class AgentProfile(models.Model):
     """creating profile for agent"""
-    user = models.OnToOneField(CustomUser, on_delete=models.CASCADE)
+    user = models.OneToOneField(CustomUser, on_delete=models.CASCADE)
     licence_number = models.CharField(max_length=50)
     agency_name = models.CharField(max_length=100)
     phone = models.CharField(max_length=15)
-    profile_picture = models.ImageField(upload_yo='agent_profiles/', blank=True, null=True)
+    profile_picture = models.ImageField(upload_to='agent_profiles/', blank=True, null=True)
 
 class Property(models.Model):
     """creating class for property"""
@@ -37,7 +50,7 @@ class Property(models.Model):
     PROPERTY_TYPE_CHOICES = [('rental', 'Rental'),
             ('sale', 'Sale'),
             ]
-    type = models.CharField(max_length=10, choicee=PROPERTY_TYPE_CHOICES)
+    type = models.CharField(max_length=10, choices=PROPERTY_TYPE_CHOICES)
     bedrooms = models.IntegerField()
     bathrooms = models.IntegerField()
     available_from = models.DateField()
@@ -58,7 +71,7 @@ class SavedSearch(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
 
 
-class Message(models.Models):
+class Message(models.Model):
     """class for message"""
     sender = models.ForeignKey(CustomUser, related_name='sent_messages', on_delete=models.CASCADE)
     receiver = models.ForeignKey(CustomUser, related_name='received_messages', on_delete=models.CASCADE)
