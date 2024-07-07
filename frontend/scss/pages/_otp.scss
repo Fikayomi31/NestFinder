@@ -1,56 +1,80 @@
-.otp--main {
-    width: 100%;
-    gap: 24px;
-    background: #BCBCBC;
+@import "../abstracts/mixins";
+
+.main {
+    padding: 50% 10px;
+    gap: 0px;
+    display: flex;
+    justify-content: space-between;
+    @include desktop-screen {
+        padding: 150px 30%;
+        
+        gap: 10px;
+        
+    }
+    
     &--section {
-        width: 560px;
-        height: 454px;
-        padding: 50px, 36px, 50px, 36px;
-        border-radius: 8px;
-        border: 1px solid #808080;
-        gap: 36px;
-        background: #FAFAFA;
-        margin-top: 200px;
-        margin-left: 400px;
-       
+        padding: 40px 20px;
+        gap: 12px;
+        border-radius: 5px;
+        border-width: 1px 0px;
+        border-style: solid;
+        border: 1px solid  #808080;
+        background: #F2F1E9;
+        @include desktop-screen {
+            padding: 20px 12px 20px 12px; /* top right bottom left */
+            gap: 12px; /* gap between child elements */
+            width: 576px;
+        
+        }
+        
         &--para {
-            margin-top: 10px;
-           padding: 30px;
-           &--2 {
-            
-            margin-top: 10px;
-           }
-           
+            gap: 8px;
+            &--1 {
+                color: $black;
+                text-align: left;
+            }
+            &--2 {
+                color: $black;
+                text-align: left;
+            }
         }
         &--p {
-           margin: -10px 10px 10px 0px;
-           padding: 30px;
-        }
-        &--box {
-            display: flex;
-            flex-direction: row;
-            gap: 20px;
-            margin-left: 30px;
-        }
-        &--btn {
-            width: 480px;
-            height: 45px;
+            color: $black;
+            text-align: left;
             margin-top: 20px;
-            margin-left: 30px;
-            padding: 15px;
+            & span {
+                color: $orange;
+            }
+        }
+        &--form {
+            margin-top: 30px;
+            & form {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                align-items: center;
+                justify-content: center;
+                
+            }
+        }
+        
+        &--btn {
+            width: 100%;
+            height: 45px;
+            padding: 8px 150px 8px 150px;
             gap: 10px;
-            background: linear-gradient(to bottom, #008000 0%, #052F05 100%);
+            border-radius: 5px;
+            margin-top: 30px;
+            background: linear-gradient(180deg, #008000 0%, #052F05 100%);
             box-shadow: 0px 1px 50px 0px #0000001A;
         }
     }
-
 }
 #input1, #input2, #input3, #input4, #input5 {
-    width: 79.8px;
+    width: 46px;
     height: 55px;
-    padding: 30px;
-    border-radius: 4px;
-    border: 1px solid #808080;
-    gap: 10px;
+    padding: 20px;
+
+
 
 }
