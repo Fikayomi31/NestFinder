@@ -234,3 +234,32 @@ label {
     color: $white;
     
 }
+.forget--main--heading--1,
+.forget--main--heading--2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32.68px;
+    color: $black;
+    text-align: left;
+}
+#username_e {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 23.15px;
+    font-family: 'Open Sans', sans-serif;
+}
+#username_or_email {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23.15px;
+    color: #808080;
+}
+.forget--main--footer {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23.15px;
+    text-align: center;
+}
