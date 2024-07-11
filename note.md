@@ -1,57 +1,70 @@
-.forget--body {
-    background-color: #BCBCBC;
-}
-.forget--main {
-    width: 567px;
-    height: 481px;
-    padding: 50px, 36px, 50px, 36px;
-    border-radius: 8px;
-    border: 1px solid #808080;
-    gap: 36px;
-    background: #FAFAFA;
-    margin-top: 200px;
-    margin-left: 380px;
-    @media (max-width: 480px) and (min-width: 768px) {
-        margin: 50px 20px 0px 100px;
-        width: 100px;
-        height: 100px;
-        background-color: red;
+.change--password {
+    background: #BCBCBC;
+    width: 100%;
+    height: 100vh;
+    &--main {
+        display: flex;
+        
+        flex-shrink: 0;
+        }
+    &--section {
+        
+        display: flex;
+        flex-shrink: 0;
+        height: 590px;
+        border: 1px solid #808080;
+        background: #FAFAFA;
+        border-radius: 2px;
+        flex-direction: column;
+        padding: 0px;
+        gap: 24px;
 
-    }
-    &--heading {
-        margin-top: 20px;
-        padding: 30px;
-        &--2 {
+        &--para {
+            gap: 2px;
+            &--1 {
+                margin-top: 20px;
+                margin-left: -80px;
+            }
+            &--2 {
+                margin-left: -250px;
+                margin-top: 10px;
+
+            }
+        }
+        &--form {
+            margin-left: 35px;
+            &--current {
+                & label {
+                    margin-top: 60px;
+
+                }
+            }
+            &--btn {
+                width: 430px;
+                height: 45px;
+                gap: 10px;
+                border-radius: 8px;
+                background: linear-gradient(to bottom, #008000 0%, #052F05 100%);
+                box-shadow: 0px 1px 50px 0px #0000001A;
+                margin-top: 20px;
+            }
+        }
+        &--para {
             margin-top: 10px;
         }
     }
-    &--form {
-        margin-left: 30px;
-        gap: 10px;
-        &--btn {
-            width: 495px;
-            height: 45px;
-            padding: 15px;
-            margin-top: 20px;
-            background: linear-gradient(to bottom, #008000 0%, #052F05 100%);
-            box-shadow: 0px 1px 50px 0px #0000001A;
-        }
-    }
-    &--footer {
-        margin-top: 40px;
-
-    }
-
+    
 }
-#username_e  {
-    margin-bottom: 10px;
+button {
+    border-radius: 8px;
 }
-#username_or_email {
-    width: 495px;
+#currentpassword, #newpassword, #confrimpassword {
+    margin-top: 5px;
+    width: 430px;
     height: 55px;
     padding: 20px;
-    border-radius: 4px;
+    border-radius: 2px;
     border: 1px solid #808080;
-    gap: 10px;
-    
+    margin-bottom: 10px;
+
 }
