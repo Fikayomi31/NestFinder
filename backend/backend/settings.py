@@ -86,7 +86,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'nestfinder_db',
         'USER': 'nestfinder',
-        'PASSWORD': 'nestfinder',
+        'PASSWORD': 'your_password',
         'HOST': 'localhost',
         'PORT': '5432',
     }
@@ -94,6 +94,8 @@ DATABASES = {
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
+
+AUTH_USER_MODEL = 'nestfinder.CustomUser'
 
 AUTH_PASSWORD_VALIDATORS = [
     {
