@@ -1,0 +1,93 @@
+@import "../abstracts/mixins";
+
+.inbox {
+    background: $white;
+    gap: 20px;
+    padding: 16px 0px;
+    @include desktop-screen {
+        padding: 0px;
+
+    }
+    @include tablet-screen {
+        padding: 0;
+    }
+
+    &--section1 {
+        padding: 0px 12px;
+        gap: 16px;
+        padding-bottom: 40px;
+        @include desktop-screen {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            margin: 0;
+            padding: 50px;
+
+        }
+        @include tablet-screen {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            margin: 0;
+            padding: 50px;
+        }
+        
+        &--container {
+            padding: 28px 16px 28px 16px;
+            gap: 20px;
+            border-radius: 8px;
+            border: 1px solid #808080;  
+            background: #FAFAFA;
+
+            &--header {
+                gap: 20px;
+                margin-top: 20px;
+            }
+            &--btn {
+                gap: 30px;
+                margin-top: 30px;
+
+                & button {
+                    width: 100%;
+                    height: 45px;
+                    background: linear-gradient(180deg, #008000 0%, #052F05 100%);
+                    border: 1px solid #008000;
+                    border-radius: 10px;
+                    color: $white;
+                }
+            }
+            &--login {
+                margin-top: 30px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    &--aside {
+        padding: 32px 0 0 0;
+        gap: 24px;
+        background: #BCBCBC;
+        & p {
+            margin-top: 40px;
+
+        }
+        &--img {
+            width: 100%;
+            height: 659px;
+            flex-shrink: 0;
+            margin-top: 20px;
+             mix-blend-mode: multiply;
+        }
+    }
+}
+main {
+    @include desktop-screen {
+        display: flex;
+        flex-direction: row;
+        padding: 0px 0px;
+    }
+    @include tablet-screen {
+        display: flex;
+        flex-direction: row;
+        padding: 0px 0px;
+    }
+}

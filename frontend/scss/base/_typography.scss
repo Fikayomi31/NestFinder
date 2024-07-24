@@ -284,3 +284,41 @@ label {
     line-height: 23.15px;
     text-align: left;
 }
+.inbox--section1--container--header p:first-of-type {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 49.03px;
+    text-align: left;
+    color: $black;
+}
+.inbox--section1--container--header p:last-of-type {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23.15px;
+    text-align: left;
+    color: $black;
+}
+.inbox--section1--container--btn button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    line-height: 23.15px;
+
+}
+.inbox--section1--container--login p {
+    color: $orange;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 23.15px;
+    text-align: left;
+
+}
+.inbox--aside p {
+    font-size: 36px;
+    font-family:  'Open Sans', sans-serif;
+    font-weight: 800;
+    line-height: 49.03px;
+    text-align: center;
+    
+}
