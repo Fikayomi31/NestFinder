@@ -320,5 +320,28 @@ label {
     font-weight: 800;
     line-height: 49.03px;
     text-align: center;
+
+}
+.main--user--links--container a {
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    line-height: 29.15px;
+    @include desktop-screen {
+        font-size: 20px;
+    }
+}
+.main--user--property--header p {
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    line-height: 29.15px;
+    text-align: left;
+    @include desktop-screen {
+        font-size: 20px;
+    }
     
+}
+.main--user--property--header p:first-of-type {
+    color: $orange;
 }

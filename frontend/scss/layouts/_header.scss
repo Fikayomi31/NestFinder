@@ -6,6 +6,7 @@
     justify-content: space-between;
     padding: 10px 0px;    
     align-items: center;
+    width: 100%;
     @include desktop-screen {
         padding: 15px 25px;
     }

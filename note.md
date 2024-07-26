@@ -1,70 +1,31 @@
-.change--password {
-    background: #BCBCBC;
-    width: 100%;
-    height: 100vh;
-    &--main {
-        display: flex;
-        
-        flex-shrink: 0;
-        }
-    &--section {
-        
-        display: flex;
-        flex-shrink: 0;
-        height: 590px;
-        border: 1px solid #808080;
-        background: #FAFAFA;
-        border-radius: 2px;
-        flex-direction: column;
-        padding: 0px;
-        gap: 24px;
-
-        &--para {
-            gap: 2px;
-            &--1 {
-                margin-top: 20px;
-                margin-left: -80px;
-            }
-            &--2 {
-                margin-left: -250px;
-                margin-top: 10px;
-
-            }
-        }
-        &--form {
-            margin-left: 35px;
-            &--current {
-                & label {
-                    margin-top: 60px;
-
-                }
-            }
-            &--btn {
-                width: 430px;
-                height: 45px;
-                gap: 10px;
-                border-radius: 8px;
-                background: linear-gradient(to bottom, #008000 0%, #052F05 100%);
-                box-shadow: 0px 1px 50px 0px #0000001A;
-                margin-top: 20px;
-            }
-        }
-        &--para {
-            margin-top: 10px;
-        }
-    }
-    
-}
-button {
-    border-radius: 8px;
-}
-#currentpassword, #newpassword, #confrimpassword {
-    margin-top: 5px;
-    width: 430px;
-    height: 55px;
-    padding: 20px;
-    border-radius: 2px;
-    border: 1px solid #808080;
-    margin-bottom: 10px;
-
-}
+</section>
+    <section class="main--user--property">
+      <div class="main--user--property--header">
+        <p>Recommended</p>
+        <p>Popular</p>
+        <p>Nearest</p>
+      </div>
+      <div class="main--user--property--list">
+        <img src="./assets/building_1 (1).jpg" alt="building">
+        <img src="./assets/building_1 (2).jpg" alt="building">
+        <img src="./assets/building_1 (3).jpg" alt="building">
+        <img src="./assets/building_1 (4).jpg" alt="building">
+        <img src="./assets/building_1 (5).jpg" alt="building">
+        <img src="./assets/building_1 (6).jpg" alt="building">
+        <img src="./assets/house (1).jpg" alt="building">
+        <img src="./assets/house (2).jpg" alt="building">
+        <img src="./assets/house (3).jpg" alt="building">
+        <img src="./assets/house (4).jpg" alt="building">
+        <img src="./assets/house (5).jpg" alt="building">
+        <img src="./assets/house (6).jpg" alt="building">
+        <img src="./assets/pro (1).jpg" alt="building">
+        <img src="./assets/pro (2).jpg" alt="building">
+        <img src="./assets/pro (3).jpg" alt="building">
+        <img src="./assets/pro (4).jpg" alt="building">
+        <img src="./assets/pro (5).jpg" alt="building">
+        <img src="./assets/pro (6).jpg" alt="building">
+        <img src="./assets/pro (7).jpg" alt="building">
+        <img src="./assets/pro (8).jpg" alt="building">
+        <img src="./assets/pro.jpg" alt="building">
+      </div>
+    </section>
