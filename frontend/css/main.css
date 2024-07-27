@@ -338,6 +338,25 @@ label {
 .main--user--property--header p:first-of-type {
   color: #E87C00; }
 
+.main--user--property--list--pic--heading {
+  font-size: 17px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  line-height: 29.15px;
+  text-align: left; }
+
+.main--user--property--list--pic--money {
+  font-size: 17px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  line-height: 29.15px; }
+
+.main--user--property--list--pic--location {
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 29.15px;
+  color: #808080; }
+
 .main--hero {
   image-rendering: crisp-edges;
   background-size: cover;
@@ -1171,7 +1190,7 @@ label {
     gap: 20px; }
     @media (min-width: 901px) {
       .main--user--links {
-        margin-left: 200px;
+        margin-left: 250px;
         justify-content: center;
         align-items: center; } }
     @media (min-width: 551px) and (max-width: 900px) {
@@ -1209,7 +1228,7 @@ label {
         outline: none; }
         @media (min-width: 901px) {
           .main--user--links--searchbtn input[type="text"] {
-            width: 500px; } }
+            width: 700px; } }
         @media (min-width: 551px) and (max-width: 900px) {
           .main--user--links--searchbtn input[type="text"] {
             width: 400px; } }
@@ -1229,42 +1248,68 @@ label {
     padding: 20px; }
     @media (min-width: 901px) {
       .main--user--property {
-        margin: 0;
-        padding: 0; } }
+        margin-left: 20px; } }
     .main--user--property--header {
       display: flex;
-      padding: 30px;
+      padding: 10px 30px;
       justify-items: center;
       align-items: center;
-      gap: 30px; }
+      gap: 40px; }
       @media (min-width: 901px) {
         .main--user--property--header {
-          margin: 0 250px; } }
+          margin: 0 400px; } }
       @media (min-width: 551px) and (max-width: 900px) {
         .main--user--property--header {
-          margin: 0 150px; } }
+          margin: 0 130px; } }
     .main--user--property--list {
       display: grid;
       grid-template-columns: auto auto auto;
       gap: 20px;
-      padding: 30px; }
+      padding: 10px 0px; }
+      @media (max-width: 550px) {
+        .main--user--property--list {
+          display: flex;
+          flex-direction: column; } }
       @media (min-width: 901px) {
         .main--user--property--list {
-          margin-left: 100px; } }
+          display: grid;
+          grid-template-columns: auto auto auto auto auto; } }
       @media (min-width: 551px) and (max-width: 900px) {
         .main--user--property--list {
-          margin-left: 58px; } }
-      .main--user--property--list img {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        justify-items: center;
-        align-items: center; }
-        @media (min-width: 901px) {
-          .main--user--property--list img {
-            width: 150px;
-            height: 150px; } }
-        @media (min-width: 551px) and (max-width: 900px) {
-          .main--user--property--list img {
-            width: 110px;
-            height: 110px; } }
+          display: grid;
+          grid-template-columns: auto auto auto; } }
+      .main--user--property--list--pic {
+        display: flex;
+        flex-direction: column; }
+        .main--user--property--list--pic--img {
+          width: 110px;
+          height: 180px;
+          justify-items: center;
+          align-items: center; }
+          @media (min-width: 901px) {
+            .main--user--property--list--pic--img {
+              width: 240px;
+              height: 240px; } }
+          @media (min-width: 551px) and (max-width: 900px) {
+            .main--user--property--list--pic--img {
+              width: 100%;
+              height: 260px; } }
+          @media (max-width: 550px) {
+            .main--user--property--list--pic--img {
+              width: 100%;
+              height: 290px; } }
+        .main--user--property--list--pic--map {
+          width: 14px;
+          height: 20px; }
+        .main--user--property--list--pic--heading {
+          text-align: left;
+          color: #008000; }
+        .main--user--property--list--pic--money {
+          text-align: right; }
+        .main--user--property--list--pic--location {
+          margin-left: -130px;
+          margin-top: -26px; }
+          @media (min-width: 551px) and (max-width: 900px) {
+            .main--user--property--list--pic--location {
+              margin-left: -10px;
+              margin-top: -26px; } }

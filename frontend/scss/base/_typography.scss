@@ -345,3 +345,23 @@ label {
 .main--user--property--header p:first-of-type {
     color: $orange;
 }
+.main--user--property--list--pic--heading {
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    line-height: 29.15px;
+    text-align: left;
+}
+.main--user--property--list--pic--money {
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    line-height: 29.15px;
+    
+}
+.main--user--property--list--pic--location {
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 29.15px;
+    color: $gray;
+}
