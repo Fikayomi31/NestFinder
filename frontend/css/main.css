@@ -1313,3 +1313,6 @@ label {
             .main--user--property--list--pic--location {
               margin-left: -10px;
               margin-top: -26px; } }
+          @media (min-width: 901px) {
+            .main--user--property--list--pic--location {
+              margin-left: -20px; } }
