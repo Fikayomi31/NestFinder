@@ -316,13 +316,13 @@ label {
   line-height: 49.03px;
   text-align: center; }
 
-.main--user--links--container a {
+.main--user--links--container a, .main--agent--links--container a {
   font-size: 17px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   line-height: 29.15px; }
   @media (min-width: 901px) {
-    .main--user--links--container a {
+    .main--user--links--container a, .main--agent--links--container a {
       font-size: 20px; } }
 
 .main--user--property--header p {
@@ -338,20 +338,20 @@ label {
 .main--user--property--header p:first-of-type {
   color: #E87C00; }
 
-.main--user--property--list--pic--heading {
+.main--user--property--list--pic--heading, .main--agent--property--pic--heading {
   font-size: 17px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   line-height: 29.15px;
   text-align: left; }
 
-.main--user--property--list--pic--money {
+.main--user--property--list--pic--money, .main--agent-property--pic--money {
   font-size: 17px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   line-height: 29.15px; }
 
-.main--user--property--list--pic--location {
+.main--user--property--list--pic--location, .main--agent--property--pic--location {
   font-size: 15px;
   font-family: 'Open Sans', sans-serif;
   line-height: 29.15px;
@@ -1186,7 +1186,7 @@ label {
   gap: 20px;
   background: #FAFAFA; }
   .main--user--links {
-    margin-top: 30px;
+    margin: auto;
     gap: 20px; }
     @media (min-width: 901px) {
       .main--user--links {
@@ -1219,7 +1219,8 @@ label {
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 20px; }
+      padding: 20px;
+      justify-items: center; }
       .main--user--links--searchbtn input[type="text"] {
         padding: 10px 20px;
         font-size: 16px;
@@ -1281,6 +1282,9 @@ label {
       .main--user--property--list--pic {
         display: flex;
         flex-direction: column; }
+        @media (min-width: 901px) {
+          .main--user--property--list--pic {
+            width: 230px; } }
         .main--user--property--list--pic--img {
           width: 110px;
           height: 180px;
@@ -1288,8 +1292,8 @@ label {
           align-items: center; }
           @media (min-width: 901px) {
             .main--user--property--list--pic--img {
-              width: 240px;
-              height: 240px; } }
+              width: 230px;
+              height: 230px; } }
           @media (min-width: 551px) and (max-width: 900px) {
             .main--user--property--list--pic--img {
               width: 100%;
@@ -1305,7 +1309,8 @@ label {
           text-align: left;
           color: #008000; }
         .main--user--property--list--pic--money {
-          text-align: right; }
+          text-align: right;
+          margin-bottom: 20px; }
         .main--user--property--list--pic--location {
           margin-left: -130px;
           margin-top: -26px; }
@@ -1316,3 +1321,117 @@ label {
           @media (min-width: 901px) {
             .main--user--property--list--pic--location {
               margin-left: -20px; } }
+
+.main--agent {
+  gap: 20px;
+  background: #FAFAFA; }
+  .main--agent--links {
+    margin: auto;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px; }
+    .main--agent--links--container {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px; }
+      .main--agent--links--container a {
+        color: #101010;
+        text-decoration: none;
+        text-align: center; }
+        .main--agent--links--container a:hover {
+          color: #E87C00; }
+  .main--agent--searchbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    justify-items: center; }
+    .main--agent--searchbox input[type="text"] {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 50px 0 0 50px;
+      outline: none; }
+      @media (min-width: 901px) {
+        .main--agent--searchbox input[type="text"] {
+          width: 700px; } }
+      @media (min-width: 551px) and (max-width: 900px) {
+        .main--agent--searchbox input[type="text"] {
+          width: 400px; } }
+    .main--agent--searchbox button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 0 50px 50px 0;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+      outline: none; }
+    .main--agent--searchbox button img {
+      width: 20px;
+      height: 20px; }
+  .main--agent--property {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px; }
+    @media (max-width: 550px) {
+      .main--agent--property {
+        display: flex;
+        flex-direction: column; } }
+    @media (min-width: 901px) {
+      .main--agent--property {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto; } }
+    @media (min-width: 551px) and (max-width: 900px) {
+      .main--agent--property {
+        display: grid;
+        grid-template-columns: auto auto auto; } }
+    .main--agent--property--pic {
+      display: flex;
+      flex-direction: column; }
+      @media (min-width: 901px) {
+        .main--agent--property--pic {
+          width: 230px; } }
+      .main--agent--property--pic--img {
+        width: 110px;
+        height: 180px;
+        justify-items: center;
+        align-items: center; }
+        @media (min-width: 901px) {
+          .main--agent--property--pic--img {
+            width: 230px;
+            height: 230px; } }
+        @media (min-width: 551px) and (max-width: 900px) {
+          .main--agent--property--pic--img {
+            width: 100%;
+            height: 260px; } }
+        @media (max-width: 550px) {
+          .main--agent--property--pic--img {
+            width: 100%;
+            height: 290px; } }
+      .main--agent--property--pic--map {
+        width: 14px;
+        height: 20px; }
+      .main--agent--property--pic--heading {
+        text-align: left;
+        color: #008000; }
+      .main--agent--property--pic--money {
+        text-align: right;
+        margin-bottom: 20px; }
+      .main--agent--property--pic--location {
+        margin-left: -130px;
+        margin-top: -26px; }
+        @media (min-width: 551px) and (max-width: 900px) {
+          .main--agent--property--pic--location {
+            margin-left: -10px;
+            margin-top: -26px; } }
+        @media (min-width: 901px) {
+          .main--agent--property--pic--location {
+            margin-left: -20px; } }

@@ -322,7 +322,7 @@ label {
     text-align: center;
 
 }
-.main--user--links--container a {
+.main--user--links--container a, .main--agent--links--container a  {
     font-size: 17px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
@@ -345,21 +345,21 @@ label {
 .main--user--property--header p:first-of-type {
     color: $orange;
 }
-.main--user--property--list--pic--heading {
+.main--user--property--list--pic--heading, .main--agent--property--pic--heading{
     font-size: 17px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     line-height: 29.15px;
     text-align: left;
 }
-.main--user--property--list--pic--money {
+.main--user--property--list--pic--money, .main--agent-property--pic--money {
     font-size: 17px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     line-height: 29.15px;
     
 }
-.main--user--property--list--pic--location {
+.main--user--property--list--pic--location, .main--agent--property--pic--location {
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
     line-height: 29.15px;

@@ -1,34 +1,21 @@
-.main--user {
+.main--agent {
     gap: 20px;
     background: $white;
 
     &--links {
         margin: auto;
         gap: 20px;
-        @include desktop-screen {
-            margin-left: 250px;
-            justify-content: center;
-            align-items: center;
-        }
-        @include tablet-screen {
-            margin-left: 140px;
-            justify-content: center;
-            align-items: center;
-        }
-        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0px;
         &--container {
+            padding: 10px;
+            display: flex;
             align-items: center;
             justify-content: center;
-            display: flex;
-            gap: 20px;
-            @include desktop-screen {
-                gap: 50px;
+            gap: 30px;
 
-            }
-            @include tablet-screen {
-                gap: 40px;
-            }
-            
             & a {
                 color: $black;
                 text-decoration: none;
@@ -38,70 +25,52 @@
                 }
             }
         }
-        &--searchbtn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            justify-items: center;
+    }
+    &--searchbox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        justify-items: center;
+        
+        & input[type="text"] {
             
-            & input[type="text"] {
-                
-                padding: 10px 20px;
-                font-size: 16px;
-                border: 1px solid #ccc;
-                border-radius: 50px 0 0 50px;
-                outline: none;
-                @include desktop-screen {
-                    width: 700px;
-                }
-                @include tablet-screen {
-                    width: 400px;
-                }
+            padding: 10px 20px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 50px 0 0 50px;
+            outline: none;
+            @include desktop-screen {
+                width: 700px;
             }
-            & button {
-                padding: 10px 20px;
-                font-size: 16px;
-                border: none;
-                border-radius: 0 50px 50px 0;
-                background-color: #4CAF50;
-                color: white;
-                cursor: pointer;
-                outline: none;
-                
-            } 
-            & button img {
-                width: 20px;
-                height: 20px;
-            } 
-            
+            @include tablet-screen {
+                width: 400px;
+            }
         }
+        & button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 0 50px 50px 0;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            outline: none;
+            
+        } 
+        & button img {
+            width: 20px;
+            height: 20px;
+        } 
+        
     }
     &--property {
-       padding: 20px;
-       @include desktop-screen{
-        margin-left: 20px;
-
-       }
-       &--header {
-        display: flex;
-        padding: 10px 30px;
-        justify-items: center;
-        align-items: center;
-        gap: 40px;
-        @include desktop-screen {
-            margin: 0 400px;
-
-        }
-        @include tablet-screen {
-            margin: 0 130px;
-        }
-       }
-       &--list {
         display: grid;
         grid-template-columns: auto auto auto;
         gap: 20px;
-        padding: 10px 0px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
         @include mobile-screen {
             display: flex;
             flex-direction: column;
@@ -171,9 +140,6 @@
                 }
             }
         }
-
-        
-       }
 
         
     }
