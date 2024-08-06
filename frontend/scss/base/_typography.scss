@@ -365,3 +365,69 @@ label {
     line-height: 29.15px;
     color: $gray;
 }
+.main--detail--property--header p {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 49.15px;
+    color: $black;
+    font-weight: 700;
+    
+}
+.main--detail--description--home p:nth-child(1) {
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 32.15px;
+    font-weight: 700;
+    color: $black;
+    @include mobile-screen {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    @include tablet-screen {
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+.main--detail--description--home p {
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 23px;
+    font-weight: 400;
+    & span {
+        font-size: 17px;
+        font-family: 'Open Sans', sans-serif;
+        line-height: 23px;
+        font-weight: 400;
+    }
+    
+}
+.main--detail--description--maintain p:nth-child(1) {
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 32.15px;
+    font-weight: 700;
+    color: $black;
+}
+.main--detail--description--maintain p {
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 23px;
+    font-weight: 400;
+}
+
+.main--detail--description--payment p {
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 32.15px;
+    font-weight: 700;
+    color: $black;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.main--detail--button button {
+    color: $white;
+   font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23.15px;   
+}
