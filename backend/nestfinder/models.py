@@ -33,14 +33,14 @@ class CustomUser(AbstractUser):
         return self.username
 
 
-class CustomerProfile(models.Model, PhoneNumberValidatorMixin):
+class TenantProfile(models.Model, PhoneNumberValidatorMixin):
     """Creating profile for customer"""
     user = models.OneToOneField(CustomUser, on_delete=models.CASCADE)
-    profile_picture = models.ImageField(upload_to='customer_profiles/', blank=True, null=True)
+    profile_picture = models.ImageField(upload_to='tenant_profiles/', blank=True, null=True)
     phone = models.CharField(max_length=15, default='0000000000')
 
     def __str__(self):
-        return f"{self.user.username} - Customer"
+        return f"{self.user.username} - tenant"
     
     def clean(self):
         super().clean()
